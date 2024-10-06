@@ -13,6 +13,8 @@ public class Rechtecke {
 
     /* *** Aufgabenteil (a) *** */
     public static void fuellen(Rechteck[] rechtecke){
+
+
 	
     }
 
