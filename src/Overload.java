@@ -1,3 +1,4 @@
+// Michelle Pohl
 public class Overload {
 
     public static String concat(String s1, String s2) {
@@ -39,7 +40,6 @@ public class Overload {
                 concat(3, s1), concat(3, s2), concat(3, s3)
         }, c));
     }
-
-    }
+}
 
 

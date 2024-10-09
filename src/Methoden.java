@@ -1,3 +1,4 @@
+// Michelle Pohl
 public class Methoden {
 
     /* *** Aufgabenteil (a) *** */
@@ -8,7 +9,6 @@ public class Methoden {
     }
 
     public static void testMehrheit() {
-
         boolean[] values = {true, false};
 
         System.out.println("Test für mehrheit:");

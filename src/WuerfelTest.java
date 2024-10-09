@@ -1,3 +1,4 @@
+// Michelle Pohl
 public class WuerfelTest {
     public static void main(String[] args) {
         int n = 3;

@@ -1,5 +1,3 @@
-import java.util.Random;
-
 class Punkt {
     public int x, y;
 
@@ -43,7 +41,7 @@ public class Rechtecke {
 
         for (int i = 0; i < rechtecke.length; i++) {
             Rechteck r = rechtecke[i];
-            int flaeche = groesse(r);  // Fläche des Rechtecks berechnen
+            int flaeche = groesse(r);  // Fläche
 
             System.out.println((i+1) + " " + "Rechteck");
             System.out.println("   Ecke:     (" + r.loEcke.x + "/" + r.loEcke.y + ")");
