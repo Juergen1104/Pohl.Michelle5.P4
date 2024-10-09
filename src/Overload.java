@@ -16,7 +16,7 @@ public class Overload {
 
     // Überladung 2: Verbindet ein Array von Strings mit einem Trennzeichen
     public static String concat(String[] strings, char separator) {
-        String result = strings[0];  // Start mit dem ersten String
+        String result = strings[0];
         for (int i = 1; i < strings.length; i++) {
             result += separator + strings[i];
         }

@@ -3,7 +3,7 @@ import java.util.Random;
 class Punkt {
     public int x, y;
 
-    public Punkt(int x, int y) {
+    public Punkt(int x, int y) {  // Konstuktor Punkt
         this.x = x;
         this.y = y;
     }
@@ -27,14 +27,14 @@ public class Rechtecke {
     /* *** Aufgabenteil (a) *** */
     public static void fuellen(Rechteck[] rechtecke) {
 
-        Random random = new Random();
         for (int i = 0; i < rechtecke.length; i++) {
-            String name = "R" + (i + 1);  // Rechteck-Namen fortlaufend "R1", "R2", etc.
-            int x = (int) (Math.random() * 10);  // Zufallswert für x aus [0, 9]
-            int y = (int) (Math.random() * 10);  // Zufallswert für y aus [0, 9]
-            int breite = (int) (Math.random() * 50) + 1;  // Zufallswert für Breite aus [1, 50]
-            int hoehe = (int) (Math.random() * 50) + 1;   // Zufallswert für Höhe aus [1, 50]
+            String name = "R" + (i + 1);
+            int x = (int) (Math.random() * 10);
+            int y = (int) (Math.random() * 10);
+            int breite = (int) (Math.random() * 50) + 1;
+            int hoehe = (int) (Math.random() * 50) + 1;
             rechtecke[i] = new Rechteck(name, new Punkt(x, y), breite, hoehe);
+
         }
     }
 
@@ -73,9 +73,9 @@ public class Rechtecke {
     public static void sortieren(Rechteck[] rechtecke) {
 
         for (int i = 0; i < rechtecke.length - 1; i++) {
-            int minIndex = findeIndexVonMin(rechtecke, i);  // Finde das kleinste Rechteck im Bereich [i, N)
+            int minIndex = findeIndexVonMin(rechtecke, i);
             if (minIndex != i) {
-                // Vertausche das kleinste Rechteck mit dem ersten Rechteck in diesem Bereich
+                // tauschfen
                 Rechteck temp = rechtecke[i];
                 rechtecke[i] = rechtecke[minIndex];
                 rechtecke[minIndex] = temp;
